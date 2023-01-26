@@ -36,21 +36,26 @@
                 id="markerA"
             >
                 <a-entity
-                    id="bowser-model"
+                    gltf-model="#animated-asset"
                     scale="1 1 1"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
-                
-                        <h1>Вооруженный ВОИН</h1>
-            <h3>Сила: 5</h3>
+
+
+            <a-entity 
+                position="1 0 0" 
+                scale="3 3 3" 
+                text="value: Вооруженный ВОИН;
+                color:black">
+            </a-entity>
+            <!-- <h1>Вооруженный ВОИН</h1>
+            <h3>Сила: 5</h3> -->
             </a-marker>
-            
-
-
             <a-entity camera></a-entity>
         </a-scene>
+
+        <a-scene stats></a-scene>
     </body>
 </html>
