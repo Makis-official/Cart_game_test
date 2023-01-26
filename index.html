@@ -23,6 +23,11 @@
                     id="animated-asset"
                     src="assets/asset.glb"
                 ></a-asset-item>
+                
+                <a-asset-item
+                    id="animated-asset-two"
+                    src="assets/asset.glb"
+                ></a-asset-item>
             </a-assets>
 
             <a-marker
@@ -42,11 +47,19 @@
                     class="clickable"
                     gesture-handler
                 ></a-entity>
+                
+                                <a-entity
+                    gltf-model="#animated-asset-two"
+                    scale="2 2 2"
+                    animation-mixer="loop: repeat"
+                    class="clickable"
+                    gesture-handler
+                ></a-entity>
 
 
-            <a-entity 
+<!--             <a-entity 
                 text="value: Вооруженный ВОИН">
-            </a-entity>
+            </a-entity> -->
             <!-- <h1>Вооруженный ВОИН</h1>
             <h3>Сила: 5</h3> -->
             </a-marker>
